@@ -18,6 +18,7 @@ export interface Product {
     label: { en: string; ar: string }
     value: string
   }[]
+  detailImage?: string
   sectors: string[]
   featured?: boolean
 }
@@ -330,7 +331,7 @@ export const products: Product[] = [
       en: 'Heavy-duty touch down compactor with 18 CBM capacity. Features 30 ton ram force, automatic operation with one-key activation, and robust construction for continuous industrial use.',
       ar: 'مكبس تاتش داون للخدمة الشاقة بسعة 18 م³. يتميز بقوة مكبس 30 طن وتشغيل أوتوماتيكي بضغطة زر واحدة وبناء متين للاستخدام الصناعي المستمر.',
     },
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Touch%20Down%20Compactor%2018CBM.PNG-XzDy6OSFZ21Pirptkj2V8xWZjqUTdz.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13612-Hi6HGqRaZ9dUzC8EwA8j5sEJu89sVc.jpg',
     specifications: [
       { label: { en: 'Compactor Capacity', ar: 'سعة المكبس' }, value: '18 CBM' },
       { label: { en: 'Ram Force', ar: 'قوة المكبس' }, value: '30 Tons' },
@@ -358,7 +359,7 @@ export const products: Product[] = [
       en: 'Large capacity touch down compactor with 24 CBM capacity. Designed for high-volume waste processing with powerful 35 ton ram force and efficient cycle times.',
       ar: 'مكبس تاتش داون كبير السعة بسعة 24 م³. مصمم لمعالجة النفايات بكميات كبيرة مع قوة مكبس 35 طن وأوقات دورة فعالة.',
     },
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Touch%20Down%20Compactor%2024CBM-kUpyf2tN78b1f46BJ2Fan1syTUWA7C.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13612-Hi6HGqRaZ9dUzC8EwA8j5sEJu89sVc.jpg',
     specifications: [
       { label: { en: 'Compactor Capacity', ar: 'سعة المكبس' }, value: '24 CBM' },
       { label: { en: 'Ram Force', ar: 'قوة المكبس' }, value: '35 Tons' },
@@ -412,7 +413,7 @@ export const products: Product[] = [
       en: 'Efficient vertical bailing press for cardboard compaction. 25 ton capacity with production rate of 600 kg/hr. Ideal for medium to large volume recycling operations.',
       ar: 'مكبس عمودي فعال لضغط الكرتون. سعة 25 طن بمعدل إنتاج 600 كجم/ساعة. مثالي لعمليات إعادة التدوير متوسطة وكبيرة الحجم.',
     },
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vertical%2015T-jKzdyulmUyF2nOd7GVqxKfLZ2tg4Ny.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vertical25T%20%281%29-FDJ4vn8f9JAJbEDRkrVKgcJSEjEFA3.png',
     specifications: [
       { label: { en: 'Press Force', ar: 'قوة الضغط' }, value: '25 Tons' },
       { label: { en: 'Machine Weight', ar: 'وزن الآلة' }, value: '2,000 Kg' },
@@ -495,7 +496,7 @@ export const products: Product[] = [
       en: 'Industrial glass crushing machine for efficient glass bottle recycling. Reduces glass volume by up to 80%, making storage and transportation more economical. Safety features include interlocked door and emergency stop.',
       ar: 'آلة تكسير زجاج صناعية لإعادة تدوير زجاجات الزجاج بكفاءة. تقلل حجم الزجاج بنسبة تصل إلى 80%، مما يجعل التخزين والنقل أكثر اقتصادية. تشمل ميزات السلامة باب مقفل وإيقاف طوارئ.',
     },
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MEDIA_241008_PIC_GlassCrusher_FRONT_V.1-PtNKRkRz3ig3e4TFHFyvwZMZ9gQ3c7.jpg',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13611-xoPgsK3A51sygcihJSgobYZ66dW4IH.jpg',
     specifications: [
       { label: { en: 'Crushing Capacity', ar: 'سعة التكسير' }, value: '2,000 Bottles/Hr' },
       { label: { en: 'Volume Reduction', ar: 'تقليل الحجم' }, value: 'Up to 80%' },
@@ -505,6 +506,42 @@ export const products: Product[] = [
       { label: { en: 'Safety Features', ar: 'ميزات السلامة' }, value: 'Interlocked Door + E-Stop' },
     ],
     sectors: ['Hotels', 'Restaurants', 'Bars', 'Recycling Facilities', 'Event Venues'],
+    featured: true,
+  },
+  // Screw Compactors
+  {
+    id: '27',
+    slug: 'screw-compactor-x8-22',
+    name: {
+      en: 'Screw Compactor X8-22',
+      ar: 'المكبس اللولبي X8-22',
+    },
+    category: {
+      en: 'Screw Compactors',
+      ar: 'المكابس اللولبية',
+    },
+    description: {
+      en: 'Heavy-duty screw compactor model X8-22, made in Europe. Features 5,550 Nm operational torque, 20 CBM compactor capacity, and automatic one-push control. Built with Hardox high-grade steel for maximum durability and equipped with a 700L leachate tank.',
+      ar: 'مكبس لولبي للخدمة الشاقة موديل X8-22، مصنوع في أوروبا. يتميز بعزم دوران تشغيلي 5,550 نيوتن متر وسعة مكبس 20 م³ وتحكم أوتوماتيكي بضغطة واحدة. مصنوع من فولاذ هاردوكس عالي الجودة لأقصى متانة ومجهز بخزان سوائل 700 لتر.',
+    },
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13627-Bu8xsHXtmvHYkmGeED1WzMG0PaaIPS.jpg',
+    detailImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13623-lQ5x0Im3uZg8P06qHzUxwyQeqtdKRO.jpg',
+    specifications: [
+      { label: { en: 'Operational Torque', ar: 'عزم الدوران' }, value: '5,550 Nm' },
+      { label: { en: 'Leachate Tank', ar: 'خزان السوائل' }, value: '700 L' },
+      { label: { en: 'Filling Height', ar: 'ارتفاع التعبئة' }, value: '1,550 mm' },
+      { label: { en: 'Screw Speed', ar: 'سرعة الدوران' }, value: '9.2 RPM' },
+      { label: { en: 'Feed Opening Area', ar: 'مساحة فتحة التعبئة' }, value: '1,200 x 1,200 mm' },
+      { label: { en: 'Overall Size', ar: 'الحجم الاجمالي' }, value: '5,500 x 2,400 x 2,600 mm' },
+      { label: { en: 'Control', ar: 'التحكم' }, value: 'Automatic with one push' },
+      { label: { en: 'Rated Power', ar: 'القوة المقدرة' }, value: '5.5 Kw' },
+      { label: { en: 'Power Specs', ar: 'قوة المواصفات' }, value: '380V, 3 Phase, 50/60Hz' },
+      { label: { en: 'Screw Diameter', ar: 'قطر اللولب' }, value: '500 mm' },
+      { label: { en: 'Compactor Capacity', ar: 'سعة المكبس' }, value: '20 CBM' },
+      { label: { en: 'Hopper Capacity', ar: 'سعة فتحة التعبئة' }, value: '1.7 CBM' },
+      { label: { en: 'Machine Weight', ar: 'وزن الآلة' }, value: '1,800 (Head) + 4,100 (Container) Kg' },
+    ],
+    sectors: ['Hotels', 'Shopping Malls', 'Industrial Facilities', 'Distribution Centers', 'Municipalities'],
     featured: true,
   },
   // Plastic Bins
@@ -574,7 +611,7 @@ export const products: Product[] = [
     },
     description: {
       en: 'Large capacity 660L plastic waste bin for commercial and industrial use. Features four-wheel caster design for stability and ease of movement.',
-      ar: 'حاوية نفايات بلاستيكية كبيرة السعة 660 لتر للاستخدام التجاري والصناعي. تتميز بتصميم أربع عجلات للثبات وسهولة الحركة.',
+      ar: 'حاوية نفايات بلاستيك��ة كبيرة السعة 660 لتر للاستخدام التجاري والصناعي. تتميز بتصميم أربع عجلات للثبات وسهولة الحركة.',
     },
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Plastic%20Bin%20660L.PNG-Otwa7Z3yLpLaQ5OreUThyv9hQparaY.png',
     specifications: [
@@ -748,4 +785,5 @@ export const categories = [
   { en: 'Vertical Bailing Press', ar: 'مكابس الكرتون العمودية' },
   { en: 'Roller Balers', ar: 'مكابس البالات الدائرية' },
   { en: 'Glass Crushers', ar: 'آلات تكسير الزجاج' },
+  { en: 'Screw Compactors', ar: 'المكابس اللولبية' },
 ]

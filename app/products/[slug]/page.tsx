@@ -82,6 +82,20 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
                 </div>
               </div>
 
+              {/* Detail Image (Technical Specs Sheet) */}
+              {product.detailImage && (
+                <div className="bg-white rounded-2xl overflow-hidden border border-[#CFE0DA]/50 mb-4">
+                  <Image
+                    src={product.detailImage}
+                    alt={`${locale === 'ar' ? product.name.ar : product.name.en} - Technical Details`}
+                    width={800}
+                    height={1100}
+                    className="w-full h-auto"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
+              )}
+
               {/* Sectors Tags */}
               <div className={cn("bg-white rounded-xl p-6 border border-[#CFE0DA]/50", dir === 'rtl' && 'text-right')}>
                 <h3 className="text-sm font-semibold text-[#666666] uppercase tracking-wide mb-4">
