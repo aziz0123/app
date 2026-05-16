@@ -1,0 +1,141 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Steel Tech Brand Guidelines V1.3 */
+:root {
+  /* Primary Colors from Brand Guidelines */
+  --primary: #173042; /* Primary 1 - Dark Blue (Brand/Body) */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #167D88; /* Primary 2 - Teal */
+  --secondary-foreground: #ffffff;
+  
+  --accent: #E49E01; /* Primary 3 - Amber/Gold */
+  --accent-foreground: #173042;
+  
+  /* Background & Surface */
+  --background: #F5F5F5; /* Primary 3 from palette */
+  --foreground: #333333;
+  
+  --card: #ffffff;
+  --card-foreground: #333333;
+  
+  --popover: #ffffff;
+  --popover-foreground: #333333;
+  
+  /* Supporting Colors */
+  --muted: #CFE0DA;
+  --muted-foreground: #384755;
+  
+  /* Text Hierarchy */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  
+  /* Brand Extended Palette */
+  --steel-dark: #173042;
+  --steel-teal: #167D88;
+  --steel-gold: #E49E01;
+  --steel-slate: #384755;
+  --steel-forest: #4A6C2F;
+  --steel-green: #7DAD3F;
+  --steel-sage: #CFE0DA;
+  --steel-blue: #1768B4;
+  
+  /* UI Elements */
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #167D88;
+  
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #173042;
+  --foreground: #F5F5F5;
+  --card: #1e3a4c;
+  --card-foreground: #F5F5F5;
+  --popover: #1e3a4c;
+  --popover-foreground: #F5F5F5;
+  --muted: #384755;
+  --muted-foreground: #CFE0DA;
+  --border: #384755;
+  --input: #384755;
+}
+
+@theme inline {
+  --font-sans: var(--font-aptos), 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  /* Steel Tech Brand Colors */
+  --color-steel-dark: var(--steel-dark);
+  --color-steel-teal: var(--steel-teal);
+  --color-steel-gold: var(--steel-gold);
+  --color-steel-slate: var(--steel-slate);
+  --color-steel-forest: var(--steel-forest);
+  --color-steel-green: var(--steel-green);
+  --color-steel-sage: var(--steel-sage);
+  --color-steel-blue: var(--steel-blue);
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+/* Custom scrollbar for brand consistency */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--steel-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--steel-dark);
+}
