@@ -18,7 +18,6 @@ export interface Product {
     label: { en: string; ar: string }
     value: string
   }[]
-  detailImage?: string
   sectors: string[]
   featured?: boolean
 }
@@ -511,21 +510,20 @@ export const products: Product[] = [
   // Screw Compactors
   {
     id: '27',
-    slug: 'screw-compactor-x8-22',
+    slug: 'screw-compactor',
     name: {
-      en: 'Screw Compactor X8-22',
-      ar: 'المكبس اللولبي X8-22',
+      en: 'Screw Compactor',
+      ar: 'المكبس اللولبي',
     },
     category: {
       en: 'Screw Compactors',
       ar: 'المكابس اللولبية',
     },
     description: {
-      en: 'Heavy-duty screw compactor model X8-22, made in Europe. Features 5,550 Nm operational torque, 20 CBM compactor capacity, and automatic one-push control. Built with Hardox high-grade steel for maximum durability and equipped with a 700L leachate tank.',
-      ar: 'مكبس لولبي للخدمة الشاقة موديل X8-22، مصنوع في أوروبا. يتميز بعزم دوران تشغيلي 5,550 نيوتن متر وسعة مكبس 20 م³ وتحكم أوتوماتيكي بضغطة واحدة. مصنوع من فولاذ هاردوكس عالي الجودة لأقصى متانة ومجهز بخزان سوائل 700 لتر.',
+      en: 'Heavy-duty screw compactor made in Europe. Features 5,550 Nm operational torque, 20 CBM compactor capacity, and automatic one-push control. Built with Hardox high-grade steel for maximum durability and equipped with a 700L leachate tank.',
+      ar: 'مكبس لولبي للخدمة الشاقة، مصنوع في أوروبا. يتميز بعزم دوران تشغيلي 5,550 نيوتن متر وسعة مكبس 20 م³ وتحكم أوتوماتيكي بضغطة واحدة. مصنوع من فولاذ هاردوكس عالي الجودة لأقصى متانة ومجهز بخزان سوائل 700 لتر.',
     },
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13627-Bu8xsHXtmvHYkmGeED1WzMG0PaaIPS.jpg',
-    detailImage: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13623-lQ5x0Im3uZg8P06qHzUxwyQeqtdKRO.jpg',
     specifications: [
       { label: { en: 'Operational Torque', ar: 'عزم الدوران' }, value: '5,550 Nm' },
       { label: { en: 'Leachate Tank', ar: 'خزان السوائل' }, value: '700 L' },
